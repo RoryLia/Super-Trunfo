@@ -15,7 +15,11 @@ int main() {
     float pib1;
     int pont_tur;
     int pont_tur1;
-    
+    float densidade = (float) pop / area;
+    float densidade1 = (float) pop1 / area1;
+    float pib_per_capita = (float) pib / pop;
+    float pib_per_capita1 = (float) pib1 / pop1;
+
     printf ("--- Super Trunfo ---\n");
     printf ("Dê espaço para adicionar nova carta em cada pergunta, assim que finalizar, aperte enter\n");
 
@@ -41,12 +45,12 @@ int main() {
     scanf ("%d %d", &pont_tur, &pont_tur1);
 
     printf ("\n--- Carta 1 ---\n");
-    printf ("Estado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f Km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n",
-            estado, codigo, nome, pop, area, pib, pont_tur);
+    printf ("Estado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f Km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDesidade Demográfica: %.2f hab/Km²\nPIB per Capita: %.2f reais\n",
+            estado, codigo, nome, pop, area, pib, pont_tur, densidade, pib_per_capita);
 
     printf ("\n--- Carta 2 ---\n");
-    printf ("Estado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f Km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n",
-            estado1, codigo1, nome1, pop1, area1, pib1, pont_tur1);
+    printf ("Estado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f Km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\nDesidade Demográfica: %.2f hab/Km²\nPIB per Capita: %.2f reais\n",
+            estado1, codigo1, nome1, pop1, area1, pib1, pont_tur1, densidade1, pib_per_capita1);
 
     return 0;
 }
